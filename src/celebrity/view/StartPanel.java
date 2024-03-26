@@ -163,10 +163,10 @@ public class StartPanel extends JPanel
     }
     else
     {
-      validClue = controller.validateClue(clueText, "");
+      validClue = controller.validateClue(clueText, "Celebrity");
     }
     
-    if (answerText.length() > 4)
+    if (answerText.length() >= 4)
     {
       validAnswer = controller.validateCelebrity(answerText);
     }
@@ -181,6 +181,21 @@ public class StartPanel extends JPanel
   private void setupPanel()
   {
     // Adds the RadioButtons to the group so only one can be selected.
+	  
+	  setLayout(panelLayout);
+	  add(clueLabel);
+	  add(celebrityRadio);
+	  add(literatureRadio);
+	  add(answerField);
+	  add(clueField);
+	  add(startButton);
+	  add(celebrityCountLabel);
+	  add(addCelebrityButton);
+	  
+	  celebrityRadio.setSelected(true);
+	  startButton.setEnabled(false);
+	  typeGroup.add(celebrityRadio);
+	  typeGroup.add(literatureRadio);
   }
   
   /**
