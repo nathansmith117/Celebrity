@@ -1,0 +1,344 @@
+{
+  "tests": [
+    {
+      "name": "Runner test",
+      "setup": "",
+      "run": "gradle test --tests RunnerTest.testMain",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "StartPanel structure",
+      "setup": "",
+      "run": "gradle test --tests StartPanelTest.testPanelStructure",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "StartPanel framework",
+      "setup": "",
+      "run": "gradle test --tests StartPanelTest.testFrameworkMethodsExist",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "StartPanel start methods",
+      "setup": "",
+      "run": "gradle test --tests StartPanelTest.testStartMethodsExist",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 15
+    },
+    {
+      "name": "LiteratureCelebrity toString",
+      "setup": "",
+      "run": "gradle test --tests LiteratureCelebrityTest.testToString",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "LiteratureCelebrity data members",
+      "setup": "",
+      "run": "gradle test --tests LiteratureCelebrityTest.testDataMembers",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "LiteratureCelebrity set answer",
+      "setup": "",
+      "run": "gradle test --tests LiteratureCelebrityTest.testSetAnswer",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "LiteratureCelebrity getClue",
+      "setup": "",
+      "run": "gradle test --tests LiteratureCelebrityTest.testGetClue",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "LiteratureCelebrity getAnswer",
+      "setup": "",
+      "run": "gradle test --tests LiteratureCelebrityTest.testGetAnswer",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "LiteratureCelebrity constructot",
+      "setup": "",
+      "run": "gradle test --tests LiteratureCelebrityTest.testConstructor",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "LiteratureCelebrity structure",
+      "setup": "",
+      "run": "gradle test --tests LiteratureCelebrityTest.testStructure",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Frame Test",
+      "setup": "",
+      "run": "gradle test --tests FrameTest.testDataFrame",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Frame methods",
+      "setup": "",
+      "run": "gradle test --tests FrameTest.testMethods",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Celebrity toString",
+      "setup": "",
+      "run": "gradle test --tests CelebrityTest.testToString",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "Celebrity data members",
+      "setup": "",
+      "run": "gradle test --tests CelebrityTest.testDataMembers",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "Celebrity setclue",
+      "setup": "",
+      "run": "gradle test --tests CelebrityTest.testSetClue",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "Celebrity set answer",
+      "setup": "",
+      "run": "gradle test --tests CelebrityTest.testSetAnswer",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "Celebrity get clue",
+      "setup": "",
+      "run": "gradle test --tests CelebrityTest.testGetClue",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "Celebrity get answer",
+      "setup": "",
+      "run": "gradle test --tests CelebrityTest.testGetAnswer",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Celebrity Test constructor",
+      "setup": "",
+      "run": "gradle test --tests CelebrityTest.testConstructor",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 15
+    },
+    {
+      "name": "Celebrity structure",
+      "setup": "",
+      "run": "gradle test --tests CelebrityTest.testStructure",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 15
+    },
+    {
+      "name": "CelebrityPanel structure",
+      "setup": "",
+      "run": "gradle test --tests CelebrityPanelTest.testStructure",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 15
+    },
+    {
+      "name": "CelebrityPanel Framework",
+      "setup": "",
+      "run": "gradle test --tests CelebrityPanelTest.testFrameworkMethodsExist",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 15
+    },
+    {
+      "name": "CelebrityPanel celebrity methods",
+      "setup": "",
+      "run": "gradle test --tests CelebrityPanelTest.testCelebrityMethodsExist",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 15
+    },
+    {
+      "name": "CelebrityTest data members",
+      "setup": "",
+      "run": "gradle test --tests CelebrityTest.testDataMembers",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 15
+    },
+    {
+      "name": "CelebrityTest celebrity methods",
+      "setup": "",
+      "run": "gradle test --tests CelebrityTest.testCelebrityGameMethods",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 15
+    },
+    {
+      "name": "CelebrityTest processGuess",
+      "setup": "",
+      "run": "gradle test --tests CelebrityTest.testProcessGuess",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 15
+    },
+    {
+      "name": "CelebrityTest add celeb",
+      "setup": "",
+      "run": "gradle test --tests CelebrityTest.testAddCelebrity",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 15
+    },
+    {
+      "name": "CelebrityTest validate celeb",
+      "setup": "",
+      "run": "gradle test --tests CelebrityTest.testValidateCelebrity",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 15
+    },
+    {
+      "name": "CelebrityTest validate clue",
+      "setup": "",
+      "run": "gradle test --tests CelebrityTest.testValidateClue",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 15
+    },
+    {
+      "name": "CelebrityTest validate literature clue",
+      "setup": "",
+      "run": "gradle test --tests CelebrityTest.testValidateLiteratureClue",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 15
+    },
+    {
+      "name": "CelebrityTest game size",
+      "setup": "",
+      "run": "gradle test --tests CelebrityTest.testGetCelebrityGameSize",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "CelebrityTest send clue",
+      "setup": "",
+      "run": "gradle test --tests CelebrityTest.testSendClue",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 15
+    },
+    {
+      "name": "CelebrityTest send answer",
+      "setup": "",
+      "run": "gradle test --tests CelebrityTest.testSendAnswer",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 15
+    }
+  ]
+}
