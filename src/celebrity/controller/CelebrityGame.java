@@ -65,6 +65,13 @@ public class CelebrityGame
 	{
 		if (gameCelebrity.getAnswer().trim().equalsIgnoreCase(guess.trim()))
 		{
+			celebGameList.remove(0);
+			
+			if (celebGameList.size() != 0)
+			{
+				gameCelebrity = celebGameList.get(0);
+			}
+			
 			return true;
 		}
 		else
