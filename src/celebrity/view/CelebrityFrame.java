@@ -49,6 +49,7 @@ public class CelebrityFrame extends JFrame
 		this.controller = controllerRef;
 		this.gamePanel = new CelebrityPanel(controller);
 		this.panelCards = new JPanel(new CardLayout());
+		this.startPanel = new StartPanel(controller);
 		
 		setupFrame();
 	

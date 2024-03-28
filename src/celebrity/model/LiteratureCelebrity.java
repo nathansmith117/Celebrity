@@ -39,6 +39,13 @@ public class LiteratureCelebrity extends Celebrity
 	public String toString()
 	{
 		String description = "This is a literature celebrity";
+		description += "\nWith an answer of " + getAnswer();
+		description += "\nand clues of: ";
+		
+		for (String clue : super.getClue().split(","))
+		{
+			description += "\n\t" + clue;
+		}
 		
 		return description;
 	}

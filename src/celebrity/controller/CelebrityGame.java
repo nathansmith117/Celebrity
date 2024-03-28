@@ -6,6 +6,9 @@ import celebrity.model.Celebrity;
 import celebrity.model.LiteratureCelebrity;
 import celebrity.view.CelebrityFrame;
 
+import javax.swing.JOptionPane;
+
+
 /**
  * The framework for the Celebrity Game project
  * 
@@ -47,7 +50,7 @@ public class CelebrityGame
 	{
 		gameCelebrity = new Celebrity("", "");
 		celebGameList.clear();
-		gameWindow.replaceScreen("SCREEN");
+		gameWindow.replaceScreen("START");
 	}
 
 	/**
@@ -60,7 +63,14 @@ public class CelebrityGame
 	 */
 	public boolean processGuess(String guess)
 	{
-		return false;
+		if (gameCelebrity.getAnswer().trim().equalsIgnoreCase(guess.trim()))
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
 	}
 
 	/**
@@ -70,7 +80,14 @@ public class CelebrityGame
 	 */
 	public void play()
 	{
+		if (celebGameList.size() <= 0)
+		{
+			JOptionPane.showMessageDialog(gameWindow, "No celebrities added to list", "", JOptionPane.ERROR_MESSAGE);
+			return;
+		}
 		
+		gameCelebrity = celebGameList.get(0);
+		gameWindow.replaceScreen("GAME");
 	}
 
 	/**

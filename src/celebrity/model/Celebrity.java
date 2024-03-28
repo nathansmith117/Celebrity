@@ -70,7 +70,7 @@ public class Celebrity
 	@Override
 	public String toString()
 	{
-		return "A normal celebrity";
+		return "A celebrity with Clue: " + clue + ", Answer: " + answer;
 	}
 	
 }
