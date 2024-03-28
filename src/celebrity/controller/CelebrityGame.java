@@ -3,6 +3,7 @@ package celebrity.controller;
 import java.util.ArrayList;
 
 import celebrity.model.Celebrity;
+import celebrity.model.LiteratureCelebrity;
 import celebrity.view.CelebrityFrame;
 
 /**
@@ -84,7 +85,17 @@ public class CelebrityGame
 	 */
 	public void addCelebrity(String name, String guess, String type)
 	{
-		
+		if (validateCelebrity(name) && validateClue(guess, type))
+		{
+			if (type.equalsIgnoreCase("celebrity") || type.equals(""))
+			{
+				celebGameList.add(new Celebrity(name, guess));
+			}
+			else if (type.equalsIgnoreCase("literature"))
+			{
+				celebGameList.add(new LiteratureCelebrity(name, guess));
+			}
+		}
 	}
 
 	/**
