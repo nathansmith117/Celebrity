@@ -26,12 +26,17 @@ public class CelebrityGame
 	/**
 	 * The ArrayList of Celebrity values that make up the game
 	 */
+	private ArrayList<Celebrity> celebGameList;
 
 	/**
 	 * Builds the game and starts the GUI
 	 */
 	public CelebrityGame()
 	{
+		this.gameCelebrity = new Celebrity("", "");
+		this.gameWindow = new CelebrityFrame(this);
+		this.celebGameList = new ArrayList<Celebrity>();
+		prepareGame();
 	}
 
 	/**
@@ -39,6 +44,9 @@ public class CelebrityGame
 	 */
 	public void prepareGame()
 	{
+		gameCelebrity = new Celebrity("", "");
+		celebGameList.clear();
+		gameWindow.replaceScreen("SCREEN");
 	}
 
 	/**
@@ -86,7 +94,7 @@ public class CelebrityGame
 	 */
 	public boolean validateCelebrity(String name)
 	{
-		return false;
+		return name.length() >= 4;
 	}
 
 	/**
@@ -98,7 +106,24 @@ public class CelebrityGame
 	 */
 	public boolean validateClue(String clue, String type)
 	{
-		return false;
+		boolean isValid = false;
+		
+		if (type != null && clue != null)
+		{
+			if ((type.equalsIgnoreCase("celebrity") || type.equals("")) && clue.trim().length() >= 10)
+			{
+				isValid = true;
+			}
+			else if (type.equalsIgnoreCase("Literature"))
+			{
+				if (clue.trim().length() >= 10 && clue.indexOf(",") > 4)
+				{
+					isValid = true;
+				}
+			}
+		}
+		
+		return isValid;
 	}
 
 	/**
@@ -108,7 +133,7 @@ public class CelebrityGame
 	 */
 	public int getCelebrityGameSize()
 	{
-		return 0;
+		return celebGameList.size();
 	}
 
 	/**
@@ -119,7 +144,7 @@ public class CelebrityGame
 	 */
 	public String sendClue()
 	{
-		return null;
+		return gameCelebrity.getClue();
 	}
 
 	/**
@@ -130,6 +155,6 @@ public class CelebrityGame
 	 */
 	public String sendAnswer()
 	{
-		return null;
+		return gameCelebrity.getAnswer();
 	}
 }
