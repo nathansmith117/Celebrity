@@ -129,7 +129,14 @@ public class CelebrityGame
 	 */
 	public boolean validateCelebrity(String name)
 	{
-		return name.length() >= 4;
+		if (name != null && name.length() >= 4)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
 	}
 
 	/**
