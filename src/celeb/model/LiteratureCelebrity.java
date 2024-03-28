@@ -1,4 +1,4 @@
-package celebrity.model;
+package celeb.model;
 
 import java.util.ArrayList;
 

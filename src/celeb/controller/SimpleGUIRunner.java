@@ -1,4 +1,4 @@
-package celebrity.controller;
+package celeb.controller;
 
 import javax.swing.JFrame;
 

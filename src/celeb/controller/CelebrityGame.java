@@ -1,12 +1,12 @@
-package celebrity.controller;
+package celeb.controller;
 
 import java.util.ArrayList;
 
-import celebrity.model.Celebrity;
-import celebrity.model.LiteratureCelebrity;
-import celebrity.view.CelebrityFrame;
-
 import javax.swing.JOptionPane;
+
+import celeb.model.Celebrity;
+import celeb.model.LiteratureCelebrity;
+import celeb.view.CelebrityFrame;
 
 
 /**

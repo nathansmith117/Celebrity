@@ -1,4 +1,4 @@
-package celebrity.view;
+package celeb.view;
 
 import java.awt.Color;
 import java.awt.event.ActionEvent;
@@ -12,7 +12,7 @@ import javax.swing.JRadioButton;
 import javax.swing.JTextField;
 import javax.swing.SpringLayout;
 
-import celebrity.controller.CelebrityGame;
+import celeb.controller.CelebrityGame;
 
 /**
  * The start screen for the CelebrityGame app.

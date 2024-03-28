@@ -1,12 +1,13 @@
-package celebrity.view;
+package celeb.view;
 
 import javax.swing.*;
+
+import celeb.controller.CelebrityGame;
+
 import java.awt.event.ActionListener;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
-
-import celebrity.controller.CelebrityGame;
 
 /**
  * CelebrityPanel for the game Celebrity

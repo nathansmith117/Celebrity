@@ -1,4 +1,4 @@
-package celebrity.model;
+package celeb.model;
 
 /**
  * Celebrity base class for the Celebrity game.

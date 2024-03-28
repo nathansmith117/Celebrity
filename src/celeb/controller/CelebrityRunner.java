@@ -1,4 +1,4 @@
-package celebrity.controller;
+package celeb.controller;
 
 /**
  * Starts the Celebrity Game application
